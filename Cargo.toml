@@ -1,0 +1,8 @@
+[package]
+name = "sled_windows_minimized_test_case"
+version = "0.0.1"
+authors = ["David Cook <divergentdave@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+sled = "0.23.0"
