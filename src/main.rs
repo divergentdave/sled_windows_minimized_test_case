@@ -8,8 +8,12 @@ fn main() {
     println!("Doing first read on empty tree");
     let result = tree.get(&key).unwrap();
     assert!(result == None);
+    println!("Sleeping");
+    std::thread::sleep(std::time::Duration::new(5, 0));
     println!("Setting value");
     tree.set(&key, Vec::new()).unwrap();
+    println!("Sleeping");
+    std::thread::sleep(std::time::Duration::new(5, 0));
     println!("Reading back value");
     tree.get(&key).unwrap().unwrap();
     println!("Done!");
